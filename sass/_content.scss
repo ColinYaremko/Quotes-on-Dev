@@ -31,3 +31,133 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+body {
+	background-color: $color__background-screen;
+	color: green;
+	width: 420px;
+	font-family: Exo Web,sans-serif
+}
+
+
+/*FOOTER   footer.php*/
+/*FOOTER   footer.php*/
+/*FOOTER   footer.php*/
+
+div.footer-site-info {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+div.main-menu-navigation-container {
+	display: inline-flex;
+	flex-direction: row;
+	
+}
+
+ul.footer-navigation {
+	 display:	flex;
+	 flex-direction: row;
+}
+
+li#menu-item-153 {
+	display: flex;
+	padding: 0 30px 0 0;
+}
+li#menu-item-154 {
+	display: flex;
+	padding: 0 30px 0 0;
+}
+li#menu-item-155 {
+	display: flex;
+	padding: 0 30px 0 0;
+}
+
+
+/************* ABOUT page.php *************************/
+/************* ABOUT page.php *************************/
+/************* ABOUT page.php *************************/
+
+article.page.type-page {
+	margin: 0 0 1.5rem;
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+
+article.post.type-post {
+	margin: 0 0 1.5rem;
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+
+
+
+
+
+
+/*********** Archives - page-archives.php*************************/
+/*********** Archives - page-archives.php*************************/
+/*********** Archives - page-archives.php*************************/
+
+ul.author-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex: 1 1 0;
+	list-style: none;
+}
+
+ul.author-container li{
+	margin-bottom: 8px;
+	margin-right: 18px;
+	text-decoration: none;
+}
+
+ul.category-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex: 1 1 0;
+	list-style: none;
+}
+
+ul.category-container li{
+	margin-bottom: 8px;
+	margin-right: 18px;
+	text-decoration: none;
+}
+
+ul.wp-tag-cloud {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex: 1 1 0;
+	list-style: none;
+}
+
+ul.wp-tag-cloud li{
+
+	margin-bottom: 8px;
+	margin-right: 18px;
+	text-decoration: none;
+}
+
+
+
+
+
+.site-content:after, .site-content:before {
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+		top: 0;
+}

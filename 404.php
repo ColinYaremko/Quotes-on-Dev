@@ -27,4 +27,52 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+
+
+
+
+
+
+
+
+	<?php
+//Query 5 recent published post in descending order
+$args = array( 'numberposts' => '1', 'order' => 'ASC','post_status' => 'publish' );
+$recent_posts = wp_get_recent_posts( $args );
+//Now lets do something with these posts
+foreach( $recent_posts as $recent )
+{ ?>
+		</br>
+		</br>
+		</br>
+	  <div class="post-title">
+		  <hi><?php echo 'Post Title: '.$recent["post_title"];?></h1>
+		</div> <!-- post-title-->
+    <!--//echo 'Post ID: '.$recent["ID"]; -->
+	
+		<div class="post-comment">
+		<h1><?php echo 'Post Content: '.$recent{"post_content"};?></h1>
+		</div> <!--post-comment-->	
+
+
+	  <div class="post-url">
+		  <h3><?php echo 'Post URL: '.get_permalink($recent["ID"]);?></h3>
+		</div> <!--post-url-->	
+		<div class="post-author">
+		  <hi><?php echo 'Post Author '.$recent["post_author"];?></h1>
+		</div> <!-- post-author-->
+		</br>
+		</br>
+		</br>
+
+    <?php
+    //Do whatever else you please with this WordPress post
+}
+?>
+
+
+
+
+
+
 <?php get_footer(); ?>
