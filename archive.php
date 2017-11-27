@@ -9,12 +9,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<section id="archive-white-font" class="white-font">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+				//	the_archive_title( '<h1 class="page-title">', '</h1>' );
+					single_term_title( '<h1 id="archive-page-title" class="page-title">', '</h1>' ); 
 				?>
 			</header><!-- .page-header -->
 
@@ -34,7 +35,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

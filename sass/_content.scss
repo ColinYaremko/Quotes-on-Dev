@@ -253,7 +253,7 @@ button#new-quote-button {
 		:before{
 			position: absolute;
 			left:10%;
-			top:20%;
+			top:35%;
 			content:"\f10d";
 			font-family:'fontawesome';
 			color:$color__green;
@@ -262,7 +262,7 @@ button#new-quote-button {
 		:after{
 			position: absolute;
 			right:10%;
-			top:20%;
+			top:35%;
 			content:"\f10e";
 			font-family:'fontawesome';
 			color:$color__green;
@@ -369,3 +369,19 @@ button.search-submit {
  }
 }
 
+/*Archives page categories et al - archive.php*/
+
+h1#archive-page-title.page-title {
+	
+	color: $color__text-main;
+}
+
+section#archive-white-font.white-font{
+	color: $color__text-main;
+}
+
+@media screen and (min-width: 1080px){
+	h1#archive-page-title.page-title {
+		text-align: center;
+	}
+}

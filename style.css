@@ -874,7 +874,7 @@ button#new-quote-button {
   article :before {
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 35%;
     content: "\f10d";
     font-family: 'fontawesome';
     color: #0c0;
@@ -882,7 +882,7 @@ button#new-quote-button {
   article :after {
     position: absolute;
     right: 10%;
-    top: 20%;
+    top: 35%;
     content: "\f10e";
     font-family: 'fontawesome';
     color: #0c0;
@@ -968,6 +968,17 @@ button.search-submit {
             flex-direction: column; }
   .quote-submission-wrapper input:nth-child(-n+4) {
     width: 60%; } }
+
+/*Archives page categories et al - archive.php*/
+h1#archive-page-title.page-title {
+  color: #fff; }
+
+section#archive-white-font.white-font {
+  color: #fff; }
+
+@media screen and (min-width: 1080px) {
+  h1#archive-page-title.page-title {
+    text-align: center; } }
 
 /*--------------------------------------------------------------
 # Media
