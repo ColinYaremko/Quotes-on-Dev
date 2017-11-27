@@ -223,29 +223,29 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-Medium.eot");
-  src: url("Exo-Medium.eot?#iefix") format("embedded-opentype"), url("Exo-Medium.woff") format("woff"), url("Exo-Medium.ttf") format("truetype");
+  src: url("../../assets/fonts/Exo-Medium.eot");
+  src: url("../../assets/fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Medium.woff") format("woff"), url("../../assets/fonts/Exo-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-MediumItalic.eot");
-  src: url("Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("Exo-MediumItalic.woff") format("woff"), url("Exo-MediumItalic.ttf") format("truetype");
+  src: url("../../assets/fonts/Exo-MediumItalic.eot");
+  src: url("../../assets/fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-MediumItalic.woff") format("woff"), url("../../assets/fonts/Exo-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-LightItalic.eot");
-  src: url("Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("Exo-LightItalic.woff") format("woff"), url("Exo-LightItalic.ttf") format("truetype");
+  src: url("../../assets/fonts/Exo-LightItalic.eot");
+  src: url("../../assets/fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-LightItalic.woff") format("woff"), url("../../assets/fonts/Exo-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-Light.eot");
-  src: url("Exo-Light.eot?#iefix") format("embedded-opentype"), url("Exo-Light.woff") format("woff"), url("Exo-Light.ttf") format("truetype");
+  src: url("../../assets/fonts/Exo-Light.eot");
+  src: url("../../assets/fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Light.woff") format("woff"), url("../../assets/fonts/Exo-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
@@ -646,8 +646,8 @@ a {
 
 body {
   background-color: #222222;
-  color: green;
-  font-family: Exo Web,sans-serif; }
+  color: #0c0;
+  font-family: "Exo Web", sans-serif; }
 
 /****** Header - header.php *********************/
 .logo img {
@@ -689,6 +689,9 @@ div.footer-site-info {
   margin: auto;
   margin-top: 2rem;
   width: 100%; }
+
+div.footer-site-info p {
+  color: #fff; }
 
 div.main-menu-navigation-container {
   display: -webkit-inline-box;
@@ -752,6 +755,27 @@ ul#primary-menu.footer-navigation {
 /*********** Archives - page-archives.php*************************/
 /*********** Archives - page-archives.php*************************/
 /*********** Archives - page-archives.php*************************/
+div.post-archives-clearfix {
+  color: #fff; }
+
+div.categoryt-archives-clearfix {
+  color: #fff; }
+
+div.tag-archives-clearfix {
+  color: #fff; }
+
+ul.author-container li a {
+  font-family: "Exo Web", sans-serif;
+  font-size: 1.25rem !important; }
+
+a.tag-cloud-link {
+  font-family: "Exo Web", sans-serif;
+  font-size: 1.25rem !important; }
+
+li.cat-item {
+  font-family: "Exo Web", sans-serif !important;
+  font-size: 1.25rem !important; }
+
 ul.author-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,6 +871,12 @@ ul.wp-tag-cloud li {
 /*  Home page - front-page.php  */
 /*  Home page - front-page.php  */
 /*  Home page - front-page.php  */
+h2.entry-title {
+  color: #fff; }
+
+div.entry-content p {
+  color: #fff; }
+
 .site-content {
   margin: 4rem 10rem 1rem; }
 
@@ -892,7 +922,10 @@ button#new-quote-button {
   article #new-quote-button {
     margin-left: 35%; }
   article header.page-header h1.page-title {
-    text-align: center !important; } }
+    text-align: center; } }
+
+article.post.post-type.status-publish {
+  font-size: 2rem; }
 
 /*********** Error page - 404.php ***********/
 /*********** Error page - 404.php ***********/

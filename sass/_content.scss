@@ -34,8 +34,8 @@
 
 body {
 	background-color: $color__background-screen;
-	color: green;
-	font-family: Exo Web,sans-serif
+	color: $color__green;
+	font-family: $font__main;
 }
 
 
@@ -74,6 +74,10 @@ div.footer-site-info {
 	margin: auto;
 	margin-top: 2rem;
 	width: 100%;
+}
+
+div.footer-site-info p {
+	color: $color__text-main;
 }
 
 div.main-menu-navigation-container {
@@ -134,6 +138,33 @@ article.post.type-post {
 /*********** Archives - page-archives.php*************************/
 /*********** Archives - page-archives.php*************************/
 /*********** Archives - page-archives.php*************************/
+
+div.post-archives-clearfix {
+color: $color__text-main;
+}
+
+div.categoryt-archives-clearfix {
+	color: $color__text-main;
+}
+
+div.tag-archives-clearfix {
+	color: $color__text-main;
+}
+
+ul.author-container li a {
+	font-family: $font__main;
+	font-size: 1.25rem !important;
+}
+
+a.tag-cloud-link {
+	font-family: $font__main;
+	font-size: 1.25rem !important;
+}
+
+li.cat-item {
+	font-family: $font__main !important;
+	font-size: 1.25rem !important;
+}
 
 ul.author-container {
 	display: flex;
@@ -219,6 +250,13 @@ ul.wp-tag-cloud li{
 /*  Home page - front-page.php  */
 /*  Home page - front-page.php  */
 
+h2.entry-title {
+  color:$color__text-main;
+}
+
+div.entry-content p{
+	color: $color__text-main;
+}
 .site-content{
 	margin: 4rem 10rem 1rem;
 }
@@ -275,10 +313,15 @@ button#new-quote-button {
 			margin-left:35%;
 		}
 		header.page-header h1.page-title{
-			text-align: center !important;
+			text-align: center;
 		}
 	}
 	}
+
+article.post.post-type.status-publish {
+	font-size: 2rem;
+}
+
 
 /*********** Error page - 404.php ***********/
 /*********** Error page - 404.php ***********/
