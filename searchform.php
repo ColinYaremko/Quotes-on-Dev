@@ -5,6 +5,9 @@
 		</label>
 		<button class="search-submit">
 			<?php echo esc_html( 'Search' ); ?>
+			<a id="search-toggle" class="search-toggle" aria-hidden="true">
+			<i class="fa fa-search"></i>
+		</a>
 		</button>
 	</fieldset>
 </form>

@@ -35,10 +35,32 @@
 body {
 	background-color: $color__background-screen;
 	color: green;
-	width: 420px;
 	font-family: Exo Web,sans-serif
 }
 
+
+/****** Header - header.php *********************/
+.logo img {
+	width: 500px;
+	height: auto;
+}
+@media screen and (min-width: 1080px){
+	.logo img{
+		width: 700px;
+	  }
+}
+
+
+p.site-description {
+	margin-right: 0;
+}
+
+@media screen and (min-width: 1080px){
+p.site-description {
+	display: flex;
+	justify-content: center;
+} 
+}	
 
 /*FOOTER   footer.php*/
 /*FOOTER   footer.php*/
@@ -50,12 +72,15 @@ div.footer-site-info {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: auto;
+	margin-top: 2rem;
+	width: 100%;
 }
 
 div.main-menu-navigation-container {
 	display: inline-flex;
 	flex-direction: row;
-	
+	margin-top: 1rem;
+	align-items: center;
 }
 
 ul.footer-navigation {
@@ -76,11 +101,16 @@ li#menu-item-155 {
 	padding: 0 30px 0 0;
 }
 
+ul#primary-menu.footer-navigation {
+	margin-top: 1rem;
+	margin-left: 0;
+}
 
 /************* ABOUT page.php *************************/
 /************* ABOUT page.php *************************/
 /************* ABOUT page.php *************************/
 
+@media screen and (min-width: 1080px){
 article.page.type-page {
 	margin: 0 0 1.5rem;
 	display: block;
@@ -88,14 +118,13 @@ article.page.type-page {
 	margin: auto;
 }
 
-
 article.post.type-post {
 	margin: 0 0 1.5rem;
 	display: block;
 	width: 50%;
 	margin: auto;
 }
-
+}
 
 
 
@@ -149,15 +178,194 @@ ul.wp-tag-cloud li{
 	text-decoration: none;
 }
 
-
-
-
-
-.site-content:after, .site-content:before {
-    color: #0c0;
-    font-family: FontAwesome;
-    font-size: 125px;
-    line-height: 125px;
-    position: absolute;
-		top: 0;
+.archive{	
+	.post{
+		border-bottom:1px dotted white;
+		padding-bottom:2rem;
+	}
 }
+.category-display,.tag-display{
+	font-size:2rem;
+	border-bottom:1px dotted white;
+	padding-bottom:2rem;
+}
+
+.post-archives,
+.category-archives,
+.tag-archives{
+ ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      
+      padding-right:1rem;
+      a{
+        text-decoration: none;
+        
+      }
+    }
+   }
+}
+
+
+
+
+
+
+/*  Home page - front-page.php  */
+/*  Home page - front-page.php  */
+/*  Home page - front-page.php  */
+
+.site-content{
+	margin: 4rem 10rem 1rem;
+}
+
+button#new-quote-button {
+	background-color: #222;
+	border: 2px solid #0c0;
+	border-radius: 3px;
+	color: #0c0;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	padding: .75rem 2.25rem;
+	margin: auto;
+	margin-top: 1rem;
+
+}
+@media screen and (min-width: 620px){
+	#new-quote-button {
+		font-size: 1.25rem;
+	}
+}	
+
+@media screen and (min-width: 1080px){
+  button#new-quote-button {
+		margin-left: 35%;
+}
+}
+
+@media screen and (min-width: 1080px){
+	article{
+			:before{
+			position: absolute;
+			left:10%;
+			top:20%;
+			content:"\f10d";
+			font-family:'fontawesome';
+			color:$color__green;
+			font-size:8rem;
+		}
+		:after{
+			position: absolute;
+			right:10%;
+			top:20%;
+			content:"\f10e";
+			font-family:'fontawesome';
+			color:$color__green;
+			font-size:8rem;
+		}
+		.entry-content{
+			font-size:2rem;
+		}
+		#new-quote-button{
+			margin-left:35%;
+		}
+		header.page-header h1.page-title{
+			text-align: center !important;
+		}
+	}
+	}
+
+/*********** Error page - 404.php ***********/
+/*********** Error page - 404.php ***********/
+/*********** Error page - 404.php ***********/
+
+.error404{
+  .search-form{
+    display:flex;
+  }
+
+  .search-box{
+    border:none;
+    padding:0;
+  }
+
+  .search-submit{
+    background-color:none; 
+    border:none; 
+    border-radius: none; 
+    color: #0c0;
+    padding:none; 
+    padding: 0;
+    padding-left: 1rem;
+  }
+}
+
+button.search-submit {
+	height: 1rem;
+}
+
+/******* Search Results - *****************************/
+
+.search-results{
+	
+		.page-title{
+			font-weight:400;
+			border-bottom:1px dotted #fff;
+			padding-bottom:2rem;
+		}
+	}
+	
+	@media screen and (min-width: 620px){
+		.entry-title{
+			font-size:2rem;
+		}
+	}
+
+
+
+
+/******** Submit quote - page_submit.php *************************/
+/******** Submit quote - page_submit.php *************************/
+/******** Submit quote - page_submit.php *************************/
+
+.quote-source-url-box{
+	padding-bottom:2rem;
+	margin-bottom:1rem;
+}
+.quote-author-box{
+	display: flex;
+	flex-direction: column;
+}
+.quote-submission-wrapper{
+	div:nth-child(-n+4){
+		padding-bottom:1rem;
+		input:nth-child(-n+4){
+			margin-top:1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 620px){
+
+.quote-source-box{
+	display:flex;
+	flex-direction: column;
+}
+
+.quote-source-url-box{
+	display:flex;
+	flex-direction: column;
+}
+
+.quote-submission-wrapper{
+	input:nth-child(-n+4){
+		width:60%;
+	}
+ }
+}
+

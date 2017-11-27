@@ -41,7 +41,7 @@ get_header(); ?>
           <input id="submit-quote-button" type="submit" value="Submit Quote">
 
         </form>
-        <p class="submit-success-message" style="display:none;"></p>
+        <p class="submit-success-message" style="display:none;"><?php echo "hello"?></p>
 
       </div>
 
