@@ -20,4 +20,66 @@ Next you'll need to run `npm install` **inside your theme directory** to install
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
-And now would be a good time to `git init` :)
+### Technology used
+
+* HTML 
+* CSS
+* Javascript
+* php
+* AJAX
+* gulp (min, lint, uglify, etc.)
+* npm
+* WordPress
+* MAMP / MySQL
+
+
+### Built With
+
+* Visual Studio Code - The "Editor" - https://code.visualstudio.com/
+
+* Chrome - Testing platform - Google.ca
+
+* GULP - Issues and all.
+
+* GIT - github
+
+* WordPress & WP API (various plugins)
+
+
+
+### Contributing voices and ideas
+
+
+* RED Academy Starter Theme
+
+* Red WP Dev class
+
+* Jim Bennett
+
+
+
+### Versioning:
+
+* As far as I am aware, this will be the only version unless required to make changes or upgrades.   Wordpress and other tech used will have it's own updates
+
+
+### Authors
+
+* Colin Yaremko - blood, sweat and tears without sleep
+
+* See also the list of contributors who participated in this project.
+
+
+### License
+
+*  GNU General Public License v2 or later
+
+
+### Acknowledgments
+
+* See contributions!
+
+### Issues
+
+* Definitely some issues with CSS. 
+
