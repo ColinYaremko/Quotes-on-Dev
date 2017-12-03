@@ -35,7 +35,7 @@
 body {
 	background-color: $color__background-screen;
 	color: $color__green;
-	font-family: $font__main;
+	font-family: Exo;
 }
 
 
@@ -115,20 +115,33 @@ ul#primary-menu.footer-navigation {
 /************* ABOUT page.php *************************/
 
 @media screen and (min-width: 1080px){
-article.page.type-page {
-	margin: 0 0 1.5rem;
-	display: block;
-	width: 50%;
-	margin: auto;
-}
+	article.page.type-page {
+		margin: 0 0 1.5rem;
+		display: block;
+		width: 80%;
+		margin: auto;
+	}
 
-article.post.type-post {
-	margin: 0 0 1.5rem;
-	display: block;
-	width: 50%;
-	margin: auto;
-}
-}
+	article.post.type-post {
+		margin: 0 0 1.5rem;
+		display: block;
+		width: 80%;
+		margin: auto;
+	}
+
+	body.page-template-default {
+		p {
+			font-size: 1rem;
+		}
+		header.entry-header h1 {
+
+		}
+		}
+
+
+
+	}
+
 
 
 
@@ -139,15 +152,47 @@ article.post.type-post {
 /*********** Archives - page-archives.php*************************/
 /*********** Archives - page-archives.php*************************/
 
-div.post-archives-clearfix {
-color: $color__text-main;
+@media screen and (min-width: 1080px){
+	h1.entry-title,
+	div.post-archives.clearfix,
+	div.category-archives.clearfix,
+	div.tag-archives.clearfix {
+		max-width: 635px;
+		margin-left: 2rem;
+	}
+
+
+	// h2.quote-authors {
+	// 	text-align: center;
+	// }
+
 }
 
-div.categoryt-archives-clearfix {
+header.entry-header h1.entry-title {
 	color: $color__text-main;
 }
 
-div.tag-archives-clearfix {
+h2.quote-authors {
+	color: $color__text-main;
+}
+
+div.post-archives.clearfix {
+color: $color__text-main;
+}
+
+div.category-archives.clearfix {
+	color: $color__text-main;
+}
+
+div.category-archives.clearfix h2 {
+	color: $color__text-main;
+}
+
+div.tag-archives.clearfix {
+	color: $color__text-main;
+}
+
+div.tag-archives.clearfix h2 {
 	color: $color__text-main;
 }
 
@@ -242,8 +287,12 @@ ul.wp-tag-cloud li{
 }
 
 
-
-
+@media screen and (min-width: 1080px){
+	div.quotation-location-placement:not(.home) {
+	max-width: 1080px;
+	margin: auto;
+	}
+}
 
 
 /*  Home page - front-page.php  */
@@ -271,7 +320,7 @@ button#new-quote-button {
 	line-height: 1;
 	padding: .75rem 2.25rem;
 	margin: auto;
-	margin-top: 1rem;
+	margin-top: 2.5rem;
 
 }
 @media screen and (min-width: 620px){
@@ -287,25 +336,30 @@ button#new-quote-button {
 }
 
 @media screen and (min-width: 1080px){
-	article{
-		:before{
+	div#content.site-content {   //div.quotation-location-placement:not(.home)
+		&::before{
 			position: absolute;
-			left:10%;
+			left: 1%;
 			top:35%;
 			content:"\f10d";
 			font-family:'fontawesome';
 			color:$color__green;
 			font-size:8rem;
+			margin-left: 2rem;
 		}
-		:after{
+	}
+
+	div#content.site-content {    //div.quotation-location-placement:not(.home)
+		&::after{
 			position: absolute;
-			right:10%;
+			right:10%; 
 			top:35%;
 			content:"\f10e";
 			font-family:'fontawesome';
 			color:$color__green;
 			font-size:8rem;
-		}
+			margin-left: 2rem;
+		}}
 		.entry-content{
 			font-size:2rem;
 		}
@@ -316,7 +370,30 @@ button#new-quote-button {
 			text-align: center;
 		}
 	}
-	}
+	
+// @media screen and (min-width: 1080px){
+// 	div.quotation-location-placement {
+// 		:before{
+// 			position: absolute;
+// 			left:10%;
+// 			top:35%;
+// 			content:"\f10d";
+// 			font-family:'fontawesome';
+// 			color:$color__green;
+// 			font-size:8rem;
+// 		}
+// 		:after{
+// 			position: absolute;
+// 			right:10%;
+// 			top:35%;
+// 			content:"\f10e";
+// 			font-family:'fontawesome';
+// 			color:$color__green;
+// 			font-size:8rem;
+// 		}
+// 	}
+// }
+
 
 article.post.post-type.status-publish {
 	font-size: 2rem;
@@ -405,17 +482,16 @@ button.search-submit {
 	flex-direction: column;
 }
 
-.quote-submission-wrapper{
-	input:nth-child(-n+4){
-		width:60%;
+ .quote-submission-wrapper{
+ 	input:nth-child(-n+4){
+ 		width:60%;
 	}
- }
+  }
 }
 
 /*Archives page categories et al - archive.php*/
 
 h1#archive-page-title.page-title {
-	
 	color: $color__text-main;
 }
 
@@ -428,3 +504,9 @@ section#archive-white-font.white-font{
 		text-align: center;
 	}
 }
+
+// .archive h1.page-title {
+// 	border-bottom: 1px dotted #fff;
+// }
+
+

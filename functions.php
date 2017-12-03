@@ -59,6 +59,8 @@ function qod_scripts() {
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/9420eb347a.js', array(), 4.7, true);
+
+	wp_enqueue_style('Exo','https://fonts.googleapis.com/css?family=Exo');
 	
   wp_enqueue_script( 'jquery' );
 

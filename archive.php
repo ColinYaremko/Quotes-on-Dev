@@ -39,4 +39,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+
+<div class="footer-over-here">	
 <?php get_footer(); ?>
+</div> <!-- class="footer-over-here" --> 

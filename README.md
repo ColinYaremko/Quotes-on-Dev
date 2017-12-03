@@ -1,5 +1,10 @@
 # Quotes on Dev Starter
 
+![qodsnapshot](https://user-images.githubusercontent.com/32310250/33348123-edb3ddba-d449-11e7-93e2-3a0533c0e01a.PNG)
+
+Not hosted due to the need for a back-end.
+
+
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 
 ## Installation

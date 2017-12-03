@@ -16,7 +16,7 @@ get_header(); ?>
             </header><!-- .entry-header -->
 
             <div class="post-archives clearfix">
-                <h2>Quote Authors</h2>
+                <h2 class="quote-authors">Quote Authors</h2>
                 <ul class="author-container">
 					<?php
 					$posts = get_posts( 'posts_per_page=-1' );

@@ -9,9 +9,7 @@
      $.ajax({
         method: 'GET',
         url: api_vars.root_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1' 
-         
-        
-     })
+      })
      .done( function(data) {
       var slug = data[0].slug;
       
@@ -23,12 +21,14 @@
       quoteUrl = data[0]._qod_quote_source_url;
   
       var content = '';
-      content += '<p>' + quoteContent + '</p>';
-      content += '<div class="author-source-container">' + '<p>' +  authorName + '</p>';
+      content += '<div class="entry-content"><p>' + quoteContent + '</p></div>';
+      content += '<div class="author-source-container">' + '<div class="entry-meta"><h2 class="entry-title">&mdash; ' +  authorName + '</h2></div>';
       content += '<a href="' + quoteUrl + '">';
       content += quoteSource + '</a>' + '</div>';
       
-      $('.hentry').append(content,history.pushState(null,null,slug));
+      $('.hentry').append(content);
+      
+      history.pushState(null,null,slug)
 
      });
   });
