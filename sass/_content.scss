@@ -40,26 +40,27 @@ body {
 
 
 /****** Header - header.php *********************/
+
 .logo img {
 	width: 500px;
 	height: auto;
 }
+
 @media screen and (min-width: 1080px){
 	.logo img{
 		width: 700px;
 	  }
 }
 
-
 p.site-description {
 	margin-right: 0;
 }
 
 @media screen and (min-width: 1080px){
-p.site-description {
-	display: flex;
-	justify-content: center;
-} 
+	p.site-description {
+		display: flex;
+		justify-content: center;
+	} 
 }	
 
 /*FOOTER   footer.php*/
@@ -96,10 +97,12 @@ li#menu-item-153 {
 	display: flex;
 	padding: 0 30px 0 0;
 }
+
 li#menu-item-154 {
 	display: flex;
 	padding: 0 30px 0 0;
 }
+
 li#menu-item-155 {
 	display: flex;
 	padding: 0 30px 0 0;
@@ -133,20 +136,8 @@ ul#primary-menu.footer-navigation {
 		p {
 			font-size: 1rem;
 		}
-		header.entry-header h1 {
-
-		}
-		}
-
-
-
 	}
-
-
-
-
-
-
+}
 
 /*********** Archives - page-archives.php*************************/
 /*********** Archives - page-archives.php*************************/
@@ -160,12 +151,6 @@ ul#primary-menu.footer-navigation {
 		max-width: 635px;
 		margin-left: 2rem;
 	}
-
-
-	// h2.quote-authors {
-	// 	text-align: center;
-	// }
-
 }
 
 header.entry-header h1.entry-title {
@@ -219,7 +204,7 @@ ul.author-container {
 	list-style: none;
 }
 
-ul.author-container li{
+ul.author-container li {
 	margin-bottom: 8px;
 	margin-right: 18px;
 	text-decoration: none;
@@ -233,7 +218,7 @@ ul.category-container {
 	list-style: none;
 }
 
-ul.category-container li{
+ul.category-container li {
 	margin-bottom: 8px;
 	margin-right: 18px;
 	text-decoration: none;
@@ -247,20 +232,20 @@ ul.wp-tag-cloud {
 	list-style: none;
 }
 
-ul.wp-tag-cloud li{
-
+ul.wp-tag-cloud li {
 	margin-bottom: 8px;
 	margin-right: 18px;
 	text-decoration: none;
 }
 
-.archive{	
-	.post{
+.archive {	
+	.post {
 		border-bottom:1px dotted white;
 		padding-bottom:2rem;
 	}
 }
-.category-display,.tag-display{
+
+.category-display,.tag-display {
 	font-size:2rem;
 	border-bottom:1px dotted white;
 	padding-bottom:2rem;
@@ -268,19 +253,17 @@ ul.wp-tag-cloud li{
 
 .post-archives,
 .category-archives,
-.tag-archives{
- ul{
+.tag-archives {
+ ul {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
-    li{
-      
+    li {
       padding-right:1rem;
-      a{
+      a {
         text-decoration: none;
-        
       }
     }
    }
@@ -299,15 +282,22 @@ ul.wp-tag-cloud li{
 /*  Home page - front-page.php  */
 /*  Home page - front-page.php  */
 
+div#content.site-content {
+	margin: 1rem 1rem 1rem;
+}
+
+@media screen and (min-width: 1080px){
+	div#content.site-content{
+		margin: 4rem 10rem 1rem;
+	}
+}
+
 h2.entry-title {
   color:$color__text-main;
 }
 
 div.entry-content p{
 	color: $color__text-main;
-}
-.site-content{
-	margin: 4rem 10rem 1rem;
 }
 
 button#new-quote-button {
@@ -321,8 +311,8 @@ button#new-quote-button {
 	padding: .75rem 2.25rem;
 	margin: auto;
 	margin-top: 2.5rem;
-
 }
+
 @media screen and (min-width: 620px){
 	#new-quote-button {
 		font-size: 1.25rem;
@@ -332,7 +322,7 @@ button#new-quote-button {
 @media screen and (min-width: 1080px){
   button#new-quote-button {
 		margin-left: 35%;
-}
+	}
 }
 
 @media screen and (min-width: 1080px){
@@ -358,18 +348,22 @@ button#new-quote-button {
 			font-family:'fontawesome';
 			color:$color__green;
 			font-size:8rem;
-			margin-left: 2rem;
-		}}
-		.entry-content{
-			font-size:2rem;
-		}
-		#new-quote-button{
-			margin-left:35%;
-		}
-		header.page-header h1.page-title{
-			text-align: center;
+			margin-left: 3rem;
 		}
 	}
+	
+	.entry-content{
+		font-size:2rem;
+	}
+	
+	#new-quote-button{
+		margin-left:35%;
+	}
+	
+	header.page-header h1.page-title{
+		text-align: center;
+	}
+}
 	
 // @media screen and (min-width: 1080px){
 // 	div.quotation-location-placement {
@@ -404,17 +398,17 @@ article.post.post-type.status-publish {
 /*********** Error page - 404.php ***********/
 /*********** Error page - 404.php ***********/
 
-.error404{
-  .search-form{
+.error404 {
+  .search-form {
     display:flex;
   }
 
-  .search-box{
+  .search-box {
     border:none;
     padding:0;
   }
 
-  .search-submit{
+  .search-submit {
     background-color:none; 
     border:none; 
     border-radius: none; 
@@ -431,62 +425,57 @@ button.search-submit {
 
 /******* Search Results - *****************************/
 
-.search-results{
-	
-		.page-title{
+.search-results { 
+		.page-title {
 			font-weight:400;
 			border-bottom:1px dotted #fff;
 			padding-bottom:2rem;
 		}
 	}
 	
-	@media screen and (min-width: 620px){
-		.entry-title{
+	@media screen and (min-width: 620px) {
+		.entry-title { 
 			font-size:2rem;
 		}
 	}
 
-
-
-
 /******** Submit quote - page_submit.php *************************/
 /******** Submit quote - page_submit.php *************************/
 /******** Submit quote - page_submit.php *************************/
 
-.quote-source-url-box{
+.quote-source-url-box {
 	padding-bottom:2rem;
 	margin-bottom:1rem;
 }
-.quote-author-box{
+.quote-author-box {
 	display: flex;
 	flex-direction: column;
 }
-.quote-submission-wrapper{
-	div:nth-child(-n+4){
+.quote-submission-wrapper {
+	div:nth-child(-n+4) {
 		padding-bottom:1rem;
-		input:nth-child(-n+4){
+			input:nth-child(-n+4) {
 			margin-top:1rem;
-		}
+			}
 	}
 }
 
 @media screen and (min-width: 620px){
-
-.quote-source-box{
-	display:flex;
-	flex-direction: column;
-}
-
-.quote-source-url-box{
-	display:flex;
-	flex-direction: column;
-}
-
- .quote-submission-wrapper{
- 	input:nth-child(-n+4){
- 		width:60%;
+	.quote-source-box{
+		display:flex;
+		flex-direction: column;
 	}
-  }
+
+	.quote-source-url-box{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.quote-submission-wrapper{
+		input:nth-child(-n+4){
+			width:60%;
+		}
+	}
 }
 
 /*Archives page categories et al - archive.php*/
@@ -509,4 +498,15 @@ section#archive-white-font.white-font{
 // 	border-bottom: 1px dotted #fff;
 // }
 
+div.quotation-location-placement {
+	text-align: left;
+ 	margin-left: 2rem;
+}
 
+
+@media screen and (min-width: 1080px){
+	div.quotation-location-placement {
+		// text-align: center;
+ 		margin: auto;
+ 	}
+}

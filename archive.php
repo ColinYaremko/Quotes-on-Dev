@@ -38,7 +38,9 @@ get_header(); ?>
 		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div> <!--spare???-->
+</div> <!--spare???-->
+</article> <!--spare???-->
 
 <div class="footer-over-here">	
 <?php get_footer(); ?>

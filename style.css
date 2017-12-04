@@ -870,14 +870,18 @@ ul.wp-tag-cloud li {
 /*  Home page - front-page.php  */
 /*  Home page - front-page.php  */
 /*  Home page - front-page.php  */
+div#content.site-content {
+  margin: 1rem 1rem 1rem; }
+
+@media screen and (min-width: 1080px) {
+  div#content.site-content {
+    margin: 4rem 10rem 1rem; } }
+
 h2.entry-title {
   color: #fff; }
 
 div.entry-content p {
   color: #fff; }
-
-.site-content {
-  margin: 4rem 10rem 1rem; }
 
 button#new-quote-button {
   background-color: #222;
@@ -917,7 +921,7 @@ button#new-quote-button {
     font-family: 'fontawesome';
     color: #0c0;
     font-size: 8rem;
-    margin-left: 2rem; }
+    margin-left: 3rem; }
   .entry-content {
     font-size: 2rem; }
   #new-quote-button {
@@ -1013,6 +1017,14 @@ section#archive-white-font.white-font {
 @media screen and (min-width: 1080px) {
   h1#archive-page-title.page-title {
     text-align: center; } }
+
+div.quotation-location-placement {
+  text-align: left;
+  margin-left: 2rem; }
+
+@media screen and (min-width: 1080px) {
+  div.quotation-location-placement {
+    margin: auto; } }
 
 /*--------------------------------------------------------------
 # Media
