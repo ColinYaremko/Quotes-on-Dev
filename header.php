@@ -32,6 +32,6 @@
 			</header><!-- #masthead -->
 				
 
-    </div> <!-- id="page" class="hfeed site -->
+  
 	<!--	<div class="quotation-location-placement"> -->
 			<div id="content" class="site-content">

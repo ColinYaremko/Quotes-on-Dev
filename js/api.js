@@ -63,6 +63,10 @@
     }).always(function() {
       $("#quote-submission-form").trigger("reset");
     })
+  
+    .fail(function(){ 
+      alert('Something went wrong, your post was not submitted'); 
+    });
   });
   
 

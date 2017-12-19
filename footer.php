@@ -23,7 +23,7 @@
 			</footer><!-- #colophon -->
 		<!-- </div> -->
 		<!-- #page -->
-
+		</div> <!-- id="page" class="hfeed site -->
 		<?php wp_footer(); ?>
 
 	</body>

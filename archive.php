@@ -9,19 +9,18 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
 		<section id="archive-white-font" class="white-font">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-				//	the_archive_title( '<h1 class="page-title">', '</h1>' );
-					single_term_title( '<h1 id="archive-page-title" class="page-title">', '</h1>' ); 
-				?>
+				<h1 id="archive-page-title">
+					<?php single_term_title( ); ?>
+				</h1>
+	
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
@@ -35,13 +34,12 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
 		</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
-</div> <!--spare???-->
-</div> <!--spare???-->
-</article> <!--spare???-->
 
-<div class="footer-over-here">	
+
 <?php get_footer(); ?>
-</div> <!-- class="footer-over-here" --> 
+
