@@ -17,6 +17,10 @@
 						<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="http://localhost:8080/wpsandbox/archives/">Archives</a></li>
 						<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="http://localhost:8080/wpsandbox/submit/">Submit a Quote</a></li>
      		  </ul>
+					<div class="wp-footer-nav-menu">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<p>Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></p>
+					</div> <!-- wp-footer-nav-menu -->
 				</div>	<!-- menu-main-navigation-container -->				
 					<p>Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></p>
 				</div><!-- footer-site-info -->

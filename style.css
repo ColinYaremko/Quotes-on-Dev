@@ -1048,3 +1048,39 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+div.wp-footer-nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  div.wp-footer-nav-menu .menu-main-navigation-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  div.wp-footer-nav-menu p {
+    margin-top: 0px;
+    vertical-align: text-top;
+    line-height: 1; }
+
+ul#primary-menu.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none; }
+  ul#primary-menu.menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }

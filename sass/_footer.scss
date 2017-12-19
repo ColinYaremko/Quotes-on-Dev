@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+div.wp-footer-nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .menu-main-navigation-container {
+    display: flex;
+  }   
+  p { 
+    margin-top: 0px;
+    vertical-align: text-top;
+    line-height: 1;
+  }
+}
+
+
+ul#primary-menu.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  li {
+    display: flex;
+  }
+}
