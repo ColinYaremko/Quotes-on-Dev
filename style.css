@@ -1067,6 +1067,7 @@ div.wp-footer-nav-menu {
     display: -ms-flexbox;
     display: flex; }
   div.wp-footer-nav-menu p {
+    margin-left: 30px;
     margin-top: 0px;
     vertical-align: text-top;
     line-height: 1; }
